@@ -1,5 +1,5 @@
 # DiscBot
-DiscBot is a simple and easy-to-use Discord Bot designer.
+DiscBot is a simple and easy-to-use Discord Bot instruction builder.
 It uses [Discord.py](https://github.com/Rapptz/discord.py) which is for python.
 
 ```
