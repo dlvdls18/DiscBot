@@ -1,3 +1,0 @@
-ping:
-  say("Pong!")
-  say(concat("Latency: ", latency())
