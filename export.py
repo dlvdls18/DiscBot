@@ -67,7 +67,7 @@ for file in src:
   src[file]['py'] = temp
 
 print('Exporting source files...')
-os.system('rm -r dev')
+if os.path.exists('dev/'): os.system('rm -r dev')
 os.system('mkdir dev')
 for file in src:
   filename = file
