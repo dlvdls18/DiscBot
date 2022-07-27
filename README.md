@@ -5,7 +5,7 @@ It uses [Discord.py](https://github.com/Rapptz/discord.py) which is for python.
 ```
 ping:
   say("Pong!")
-  say("Latency: `", concat(latency(), "`"))
+  say(concat("Latency: ", latency()))
 ```
 
 # Installation
@@ -138,45 +138,46 @@ I will improve `export.py` soon.
 ## Messages
 ### send()
 Send a message.
-#### Arguments
+### Arguments
 String - message to send
 #### Returns
 Integer - message id
-
+***
 ### edit()
 Edit a message
 #### Arguments
 Integer - message id
 String - text
-
+***
 ### edited()
 Check if the message is edited
 #### Arguments
 Integer - message id
 #### Returns
 Boolean
-
+***
 ### message()
 Get the message
 #### Returns
 String - message
-
+***
 ### mention()
 Get the author's mention
 NOTE: Using @myname will not work.
 #### Returns
 String - mention text
-
+***
 ### author()
 Get the author name
 #### Returns
 String - username
-
+***
 ### channel()
 Get the channel name
 #### Returns
 String - channel name
 
+***
 
 ## Variable
 ### set()
@@ -184,7 +185,7 @@ Set a variable
 #### Arguments
 String - name
 Any - value
-
+***
 ### get()
 Set a variable
 #### Arguments
@@ -192,6 +193,7 @@ String - name
 #### Returns
 Any - value
 
+***
 
 ## Conditions
 ### equals()
@@ -201,7 +203,7 @@ Any - arg1
 Any - arg2
 #### Returns
 Boolean - equal
-
+***
 ### greater()
 Check if the arg1 is greater than arg2
 #### Arguments
@@ -209,7 +211,7 @@ Any - arg1
 Any - arg2
 #### Returns
 Boolean - greater
-
+***
 ### lesser()
 Check if arg1 is lesser than arg2
 #### Arguments
@@ -217,14 +219,14 @@ Any - arg1
 Any - arg2
 #### Returns
 Boolean - lesser
-
+***
 ### not()
 Toggle the boolean
 #### Arguments
 Boolean - arg1
 #### Returns
 Boolean - result
-
+***
 ### and()
 Check if arg1 and arg2 is true
 #### Arguments
@@ -232,7 +234,7 @@ Boolean - arg1
 Boolean - arg2
 #### Returns
 Boolean - result
-
+***
 ### or()
 Check if arg1 or arg2 is true
 #### Arguments
@@ -240,7 +242,7 @@ Boolean - arg1
 Boolean - arg2
 #### Returns
 Boolean - result
-
+***
 ### contains()
 Check if the arg1 contains arg2
 #### Arguments
@@ -249,6 +251,7 @@ String - arg2
 #### Returns
 Boolean - result
 
+***
 
 ## Math
 ### add()
@@ -258,7 +261,7 @@ Integer - num1
 Integer - num2
 #### Returns
 Integer - result
-
+***
 ### sub()
 Subtract 2 numbers
 #### Arguments
@@ -266,7 +269,7 @@ Integer - num1
 Integer - num2
 #### Returns
 Integer - result
-
+***
 ### multi()
 Multiply 2 numbers
 #### Arguments
@@ -274,7 +277,7 @@ Integer - num1
 Integer - num2
 #### Returns
 Integer - result
-
+***
 ### div()
 Divide 2 numbers
 #### Arguments
@@ -282,7 +285,7 @@ Integer - num1
 Integer - num2
 #### Returns
 Integer - result
-
+***
 ### mod()
 Modulo 2 numbers
 #### Arguments
@@ -290,14 +293,14 @@ Integer - num1
 Integer - num2
 #### Returns
 Integer - result
-
+***
 ### inc()
 Increment number
 #### Arguments
 Integer - num1
 #### Returns
 Integer - result
-
+***
 ### dec()
 Decrement number
 #### Arguments
@@ -305,45 +308,48 @@ Integer - num1
 #### Returns
 Integer - result
 
+***
 
 ## Statements
 ### if()
 Execute the objects when condition is true
 #### Arguments
 Boolean - condition
-
+***
 ### elseif()
 Execute the objects when condition is true
 #### Arguments
 Boolean - condition
-
+***
 ### else()
 Execute the objects when the last condition is false
-
+***
 ### try()
 Ignore error
-
+***
 ### catch()
 Execute when error is raised
-
+***
 ### end()
 End a statement
-
+***
 ### pass()
 Pass a statement
 
+***
 
 ## Functions
 ### define()
 Define a function
 #### Arguments
 String - name
-
+***
 ### call()
 Call a function
 #### Arguments
 String - name
 
+***
 
 ## Utilities
 ### length()
@@ -352,21 +358,21 @@ Get the length of given argument
 Any - arg1
 #### Returns
 Integer - length
-
+***
 ### type()
 Get the type of given argument
 #### Arguments
 Any - arg1
 #### Returns
 String - type
-
+***
 ### char()
 Convert integer to ASCII character
 #### Arguments
 Integer - arg1
 #### Returns
 String - char
-
+***
 ### cut()
 Cut a string by it's start and end index
 #### Arguments
@@ -375,14 +381,14 @@ Integer - start
 Integer - end
 #### Returns
 String - text
-
+***
 ### trim()
 Cut the spaces from start and end
 #### Arguments
 String - text
 #### Returns
 String - text
-
+***
 ### random()
 Get a random number
 #### Arguments
@@ -390,21 +396,21 @@ Integer - min
 Integer - max
 #### Returns
 Integer - num
-
+***
 ### lower()
 Convert text to lowercase
 #### Arguments
 String - text
 #### Returns
 String - text
-
+***
 ### upper()
 Convert text to uppercase
 #### Arguments
 String - text
 #### Returns
 String - text
-
+***
 ### repeat()
 Repeat the string
 #### Arguments
@@ -412,49 +418,50 @@ String - text
 Integer - times
 #### Returns
 String - text
-
+***
 ### date()
 Get the date
 #### Returns
 String - text
-
+***
 ### now()
 Get the date as milliseconds
 #### Returns
 Integer - ms
 
+***
 
 ## Others
 ### wait()
 Wait n seconds
 #### Arguments
 Integer - sec
-
+***
 ### server()
 Get the server name
 #### Returns
 String - name
-
+***
 ### latency()
 Get the bot latency
 #### Returns
 Float - latency
-
+***
 ### print()
 Print something
 #### Arguments
 Any - value
-
+***
 ### include()
 Import py file
 #### Arguments
 String - name
-
+***
 ### note()
 Comment
 #### Arguments
 String - text
-
+***
 ### source()
 Python source code
 #### Arguments
